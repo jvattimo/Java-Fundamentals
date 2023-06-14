@@ -3,20 +3,37 @@ Fundamentals Exercise 1: CLI
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
      2. Create new folder Terminal_testing
+        Answer: mkdir Terminal_testing
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+            Answer: touch monkey.txt zebra.txt apple.txt
          b. print the directory path
+            Answer: C:\Users\jvattimo\Documents\CodingNomads\Terminal_testing
          c. list the contents of the folder
+            drwxr-xr-x 1 jvattimo 1049089 0 Jun 14 13:45 ./
+            drwxr-xr-x 1 jvattimo 1049089 0 Jun 14 13:43 ../
+            -rw-r--r-- 1 jvattimo 1049089 0 Jun 14 13:45 apple.txt
+            -rw-r--r-- 1 jvattimo 1049089 0 Jun 14 13:45 monkey.txt
+            -rw-r--r-- 1 jvattimo 1049089 0 Jun 14 13:45 zebra.txt
      5. Inside of folder Terminal_testing, create a new folder
+        Answer: mkdir Test_folder
      6. Copy a file from Terminal_testing to the new folder
+        Answer: cp apple.txt Test_folder
      7. Move a different file from Terminal_testing to the new folder
+        Answer: mv zebra.txt Test_folde
      8. Demonstrate removing:
          a. A file
+            Answer: rm apple.txt
          b. A folder
+            Answer: rm -r Test_folder
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
          b. Use $ cat print contents of file
+            cat monkey.txt
+            I am a Monkey, I throw my poop at you oh oh ah ah lolol
          c. Use $ grep to search for a word inside file
+            grep "poop" monkey.txt
+            I am a Monkey, I throw my poop at you oh oh ah ah lolol
 
 Example Output:
     1. cd ~/Documents/CodingNomads/
