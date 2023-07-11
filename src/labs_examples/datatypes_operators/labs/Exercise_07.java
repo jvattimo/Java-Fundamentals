@@ -23,7 +23,12 @@ public class Exercise_07 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // write completed code here
+        // calculate daily seconds
+        int dailyseconds = 60 * 60 * 24;
+        // calculate total seconds
+        int seconds = days * dailyseconds;
+        // print out seconds in selected days
+        System.out.println("There are "+seconds+" seconds in "+days+" days");
 
     }
 }
