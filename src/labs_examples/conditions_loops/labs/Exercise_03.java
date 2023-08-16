@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 3: Months of the year
  *
@@ -9,5 +11,63 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_03 {
+    public static void main(String[] args) {
 
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("Enter a number between 1 and 12+ to receive a response: ");
+        // assign input to variable as int
+        int number = scanner.nextInt();
+        // Check number and return month
+        String month;
+        {
+            switch (number) {
+                case 1:
+                    month = "January";
+                    break;
+                case 2:
+                    month = "February";
+                    break;
+                case 3:
+                    month = "March";
+                    break;
+                case 4:
+                    month = "April";
+                    break;
+                case 5:
+                    month = "May";
+                    break;
+                case 6:
+                    month = "June";
+                    break;
+                case 7:
+                    month = "July";
+                    break;
+                case 8:
+                    month = "August";
+                    break;
+                case 9:
+                    month = "September";
+                    break;
+                case 10:
+                    month = "October";
+                    break;
+                case 11:
+                    month = "November";
+                    break;
+                case 12:
+                    month = "December";
+                    break;
+                default:
+                    month = "Other";
+                    break;
+            }
+            //Print month
+            System.out.println("The month is " + month);
+
+            // Close Scanner
+            scanner.close();
+        }
+    }
 }
