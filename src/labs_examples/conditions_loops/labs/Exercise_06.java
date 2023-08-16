@@ -8,4 +8,14 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_06 {
+    public static void main(String[] args) {
+        int lowerBound = 1;
+        int upperBound = 100;
+        int sum = 0;
+        while (lowerBound <= upperBound) {
+            sum += lowerBound;
+            lowerBound++;
+        }
+        System.out.println("The sum of the upper and lower bound of 1 to 100 is "+ sum);
+    }
 }
