@@ -9,5 +9,11 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        int [] array = {12, 15, 293, 20, 102, 293, 2, 5, 15, 22};
+        for (int i = array.length - 1; i >= 0; i -= 2) {
+            System.out.println(array[i] + " ");
+        }
 
+    }
 }
