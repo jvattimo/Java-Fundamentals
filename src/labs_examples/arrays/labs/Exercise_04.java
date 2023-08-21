@@ -17,7 +17,7 @@ public class Exercise_04 {
         };
         for (int[] row : irregularArray) {
             for(int element : row) {
-                System.out.print(element + " ");
+                System.out.print(element + "  ");
             }
             System.out.println(); // move to next line
         }
