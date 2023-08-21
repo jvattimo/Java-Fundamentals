@@ -9,5 +9,18 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main(String[] args) {
+        int[][] irregularArray = {
+                {546, 23},
+                {120, 16, 25},
+                {12, 1223, 23, 24}
+        };
+        for (int[] row : irregularArray) {
+            for(int element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println(); // move to next line
+        }
+    }
 
 }
