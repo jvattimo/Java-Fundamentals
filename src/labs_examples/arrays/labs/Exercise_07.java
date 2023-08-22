@@ -26,7 +26,9 @@ public class Exercise_07 {
         //sort animal list
         animalList.remove("Dracula");
         Collections.sort(animalList);
+        String animal = animalList.get(3);
         //Print out array list
         System.out.println(animalList);
+        System.out.println("The animal at index 3 is " + animal);
     }
 }
