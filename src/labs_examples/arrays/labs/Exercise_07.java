@@ -1,5 +1,8 @@
 package labs_examples.arrays.labs;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  *  ArrayLists
  *
@@ -10,4 +13,20 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args) {
+        //Initialize array
+        ArrayList<String> animalList = new ArrayList<>();
+        //add values to list
+        animalList.add("Dog");
+        animalList.add("Cat");
+        animalList.add("Zebra");
+        animalList.add("Monkey");
+        animalList.add("Tarantula");
+        animalList.add("Dracula");
+        //sort animal list
+        animalList.remove("Dracula");
+        Collections.sort(animalList);
+        //Print out array list
+        System.out.println(animalList);
+    }
 }
